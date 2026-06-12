@@ -1,8 +1,6 @@
 都道府県,設置区分,学校名,所在市町村,地域ブロック,公式サイトURL,メールアドレス,お問い合わせフォームURL,備考
 長野県,県立,長野県飯山高等学校,飯山市,長野,https://www.nagano-c.ed.jp/iiyama/,,https://www.nagano-c.ed.jp/iiyama/contact.html,
-長野県,県立,長野県野沢北高等学校,野沢温泉村,長野,https://www.nagano-c.ed.jp/nokitahs/,,,
-長野県,県立,長野県野沢南高等学校,野沢温泉村,長野,https://www.nagano-c.ed.jp/nominami/,,,
-長野県,県立,長野県下高井農林高等学校,木島平村,長野,https://www.nagano-c.ed.jp/nourinn/,,,
+長野県,県立,長野県下高井農林高等学校,下高井郡木島平村,長野,https://www.nagano-c.ed.jp/nourinn/,,,
 長野県,県立,長野県北部高等学校,中野市,長野,https://www.nagano-c.ed.jp/hokubu/,,,
 長野県,県立,長野県中野西高等学校,中野市,長野,https://www.nagano-c.ed.jp/inuwashi/,,,
 長野県,県立,長野県中野立志館高等学校,中野市,長野,https://www.nagano-c.ed.jp/rishikan/,,,定時制併設
@@ -20,20 +18,20 @@
 長野県,県立,長野県屋代高等学校,千曲市,長野,https://www.nagano-c.ed.jp/yashiro/,yashiro@m.nagano-c.ed.jp,,附属中学校併設
 長野県,県立,長野県屋代南高等学校,千曲市,長野,https://www.nagano-c.ed.jp/yanami/,,,
 長野県,県立,長野県更級農業高等学校,千曲市,長野,https://www.nagano-c.ed.jp/sarano/,,,
-長野県,県立,長野県坂城高等学校,坂城町,長野,https://www.nagano-c.ed.jp/sakakihs/,,,
+長野県,県立,長野県坂城高等学校,埴科郡坂城町,長野,https://www.nagano-c.ed.jp/sakakihs/,,,
 長野県,県立,長野県田川高等学校,長野市,長野,https://www.nagano-c.ed.jp/tagawahs/,,,
 長野県,市立,長野市立長野高等学校,長野市,長野,https://ichinaga.ed.jp/,,,旧サイト: https://www.nagano-ngn.ed.jp/ichinagahs/
 長野県,県立,長野県上田高等学校,上田市,上田,https://www.nagano-c.ed.jp/ueda-hs/,,,
 長野県,県立,長野県上田染谷丘高等学校,上田市,上田,https://www.nagano-c.ed.jp/someyahs/,,,
 長野県,県立,長野県上田東高等学校,上田市,上田,https://www.nagano-c.ed.jp/uehs/,,,独自サイト: https://uedahigashi.ed.jp/
-長野県,県立,長野県上田千曲高等学校,上田市,上田,http://www13.ueda.ne.jp/~ucd90/chikuma.html,,,
+長野県,県立,長野県上田千曲高等学校,上田市,上田,https://www.nagano-c.ed.jp/chikuma/,,,
 長野県,県立,長野県丸子修学館高等学校,上田市,上田,https://www.nagano-c.ed.jp/marukohs/,,,旧:丸子実業高校
 長野県,県立,長野県岩村田高等学校,佐久市,佐久,https://www.nagano-c.ed.jp/ganko/,,,
-長野県,県立,長野県野沢北高等学校,野沢温泉村,佐久,https://www.nagano-c.ed.jp/nokitahs/,,,重複のため修正が必要（佐久地区ではなく長野地区）
+長野県,県立,長野県野沢北高等学校,佐久市,佐久,https://www.nagano-c.ed.jp/nokitahs/,,,
+長野県,県立,長野県野沢南高等学校,佐久市,佐久,https://www.nagano-c.ed.jp/nominami/,,,
 長野県,県立,長野県小諸高等学校,小諸市,佐久,https://www.nagano-c.ed.jp/komorohs/,,,
 長野県,県立,長野県小諸商業高等学校,小諸市,佐久,https://www.nagano-c.ed.jp/kosho/,,,
 長野県,県立,長野県佐久平総合技術高等学校,佐久市,佐久,https://www.nagano-c.ed.jp/ssg-hs/,,,浅間・臼田の2キャンパス
-長野県,県立,長野県望月高等学校,佐久市,佐久,https://www.nagano-c.ed.jp/mochi-hs/,,,
 長野県,県立,長野県軽井沢高等学校,北佐久郡軽井沢町,佐久,https://www.nagano-c.ed.jp/karui-hs/,,,
 長野県,県立,長野県小海高等学校,南佐久郡小海町,佐久,https://www.nagano-c.ed.jp/koumi-hs/,,,独自サイト: https://sites.google.com/view/koumi-hs
 長野県,県立,長野県松本深志高等学校,松本市,松本,https://www.nagano-c.ed.jp/fukasi/,,,独自サイト: https://www.fukashi-hs.ed.jp/
@@ -41,7 +39,7 @@
 長野県,県立,長野県松本美須々ヶ丘高等学校,松本市,松本,https://www.nagano-c.ed.jp/msz-hs/,,,
 長野県,県立,長野県松本県ヶ丘高等学校,松本市,松本,https://www.nagano-c.ed.jp/agata/,,,
 長野県,県立,長野県松本工業高等学校,松本市,松本,https://www.nagano-c.ed.jp/matuko/,,,
-長野県,県立,長野県松本筑摩高等学校,松本市,松本,https://www.nagano-c.ed.jp/chikuma-hs/,,,
+長野県,県立,長野県松本筑摩高等学校,松本市,松本,https://www.nagano-c.ed.jp/m-tkm-hs/,,,通信制併設
 長野県,県立,長野県塩尻志学館高等学校,塩尻市,松本,https://www.nagano-c.ed.jp/kikyo/,,,
 長野県,県立,長野県梓川高等学校,松本市,松本,https://www.nagano-c.ed.jp/azusa-hs/,,,
 長野県,県立,長野県豊科高等学校,安曇野市,松本,https://www.nagano-c.ed.jp/toyoko/,,,
@@ -53,17 +51,18 @@
 長野県,県立,長野県諏訪二葉高等学校,諏訪市,諏訪,https://www.nagano-c.ed.jp/futaba/,,,独自サイト: https://futaba-hs.ed.jp/
 長野県,県立,長野県諏訪実業高等学校,諏訪市,諏訪,https://www.nagano-c.ed.jp/sjt-hs/,,,
 長野県,県立,長野県岡谷工業高等学校,岡谷市,諏訪,https://www.nagano-c.ed.jp/okako/,,,
-長野県,県立,長野県岡谷南高等学校,岡谷市,諏訪,https://www.nagano-c.ed.jp/okaminami-hs/,,,
+長野県,県立,長野県岡谷南高等学校,岡谷市,諏訪,https://www.nagano-c.ed.jp/okanan/,,,
 長野県,県立,長野県岡谷東高等学校,岡谷市,諏訪,https://sites.google.com/g.nagano-c.ed.jp/okahihs/,,,
 長野県,県立,長野県茅野高等学校,茅野市,諏訪,https://www.nagano-c.ed.jp/chino-hs/,,,
-長野県,県立,長野県伊那北高等学校,伊那市,伊那,https://www.nagano-c.ed.jp/ina/,,,
+長野県,県立,長野県伊那北高等学校,伊那市,伊那,https://www.nagano-c.ed.jp/ina/,,,独自サイト: https://inakita.ed.jp/
 長野県,県立,長野県伊那弥生ヶ丘高等学校,伊那市,伊那,https://www.nagano-c.ed.jp/yayoi/,,,
 長野県,県立,長野県赤穂高等学校,駒ヶ根市,伊那,https://www.nagano-c.ed.jp/akaho-hs/,,,
 長野県,県立,長野県駒ヶ根工業高等学校,駒ヶ根市,伊那,https://www.nagano-c.ed.jp/komako/,,,
 長野県,県立,長野県高遠高等学校,伊那市,伊那,https://www.nagano-c.ed.jp/takatohs/,,,
 長野県,県立,長野県辰野高等学校,上伊那郡辰野町,伊那,https://www.nagano-c.ed.jp/tatsukou/,,,
-長野県,県立,長野県上伊那農業高等学校,南箕輪村,伊那,https://jono.ed.jp/,,,
-長野県,県立,長野県伊那工業高等学校,伊那市,伊那,https://www.nagano-c.ed.jp/ina-ko/,,,
+長野県,県立,長野県上伊那農業高等学校,上伊那郡南箕輪村,伊那,https://jono.ed.jp/,,,
+長野県,県立,長野県箕輪進修高等学校,上伊那郡箕輪町,伊那,https://www.nagano-c.ed.jp/minowa/,,,多部制・単位制
+長野県,県立,長野県箕輪工業高等学校,上伊那郡箕輪町,伊那,https://www.nagano-c.ed.jp/minoko/,,,
 長野県,県立,長野県飯田高等学校,飯田市,飯田,https://www.nagano-c.ed.jp/iida/,,,
 長野県,県立,長野県飯田風越高等学校,飯田市,飯田,https://www.nagano-c.ed.jp/fuetsuhs/,,,
 長野県,県立,長野県飯田OIDE長姫高等学校,飯田市,飯田,https://www.nagano-c.ed.jp/oideosa/,,,
@@ -73,10 +72,10 @@
 長野県,私立,長野俊英高等学校,長野市,長野,https://shinonoi-gakuen.ac.jp/nagano-shun_ei/,,,学校法人篠ノ井学園
 長野県,私立,長野清泉女学院高等学校,長野市,長野,https://www.seisen.ed.jp/,,,女子校
 長野県,私立,長野日本大学高等学校,長野市,長野,https://www.nagano-nichidai.ed.jp/,,,
-長野県,私立,文化学園長野高等学校,長野市,長野,https://bgh.gakuen-nagano.ac.jp/,,,共学
+長野県,私立,文化学園長野高等学校,長野市,長野,https://bgh.gakuen-nagano.ac.jp/,,https://bgh.gakuen-nagano.ac.jp/inq/,
 長野県,私立,上田西高等学校,上田市,上田,https://uedanishi.ed.jp/,,,
 長野県,私立,佐久長聖高等学校,佐久市,佐久,https://sakuchosei.ed.jp/,senior@sakuchosei.ed.jp,https://sakuchosei.ed.jp/contact/hs-toiawase/,
-長野県,私立,松本秀峰中等教育学校,松本市,松本,https://www.shuho.ed.jp/,,,中等教育学校（高校段階に相当する後期課程あり）
+長野県,私立,松本秀峰中等教育学校,松本市,松本,https://www.shuho.ed.jp/,,,中等教育学校（前期・後期課程一貫）
 長野県,私立,松本第一高等学校,松本市,松本,https://www.matsumoto1-h.ed.jp/,,,
 長野県,私立,東京都市大学塩尻高等学校,塩尻市,松本,https://www.tcu-shiojiri.ed.jp/,,,
 長野県,私立,東海大学付属諏訪高等学校,茅野市,諏訪,https://www.suwa.tokai.ed.jp/,,,
