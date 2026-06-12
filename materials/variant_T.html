@@ -177,10 +177,11 @@
   .contact .c-info b { font-size: 10pt; }
   .note { font-size: 7pt; color: #7a8a8a; margin-top: 3pt; line-height: 1.4; }
 
-  .topphotos { display:flex; gap:7pt; margin:0 0 7pt; }
-  .topphotos .tp-cell { width:50%; }
+  .topphotos { display:flex; gap:7pt; margin:0 0 7pt; align-items:flex-start; }
+  .topphotos .tp-cell.left  { width:46%; }
+  .topphotos .tp-cell.right { width:54%; }
   .topphotos img, .topphotos .ph {
-    width:100%; height:30mm; object-fit:cover; display:block;
+    width:100%; height:29mm; object-fit:cover; display:block;
     border-radius:3pt; }
   .topphotos .ph { background:#e3ecec; color:#8a9a9a; font-size:8.5pt;
     display:flex; align-items:center; justify-content:center; }
@@ -197,8 +198,8 @@
   <div class="doctitle">会社概要 ＆ クラウドファンディング活用サポートのご案内</div>
 
   <div class="topphotos">
-    <div class="tp-cell"><img src="DSC_0289.JPG" alt=""><div class="pcap">KITAICHIチーム ─ 夕張の拠点にて</div></div>
-    <div class="tp-cell"><div class="ph">［ 写真がここに入ります ］</div><div class="pcap">（写真キャプション）</div></div>
+    <div class="tp-cell left"><img src="DSC_0289.JPG" style="object-position:center 30%;" alt=""><div class="pcap">KITAICHIチーム ─ 夕張の拠点にて</div></div>
+    <div class="tp-cell right"><img src="プロフィール写真.jpg" style="object-position:center 22%;" alt=""><div class="pcap">代表　佐近　航（さこん わたる）</div></div>
   </div>
 
   <!-- 上段：会社概要 ＋ 代表メッセージ -->
