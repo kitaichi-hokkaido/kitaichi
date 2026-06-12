@@ -26,13 +26,15 @@ top_css = '''
   .topphotos img, .topphotos .ph {
     width:100%; height:38mm; object-fit:cover; display:block;
     border-radius:3pt; }
+  /* left cell: show the whole photo so the full bodies stay in frame */
+  .topphotos .tp-cell.contain img { object-fit:contain; object-position:center; }
   .topphotos .ph { background:#e3ecec; color:#8a9a9a; font-size:8.5pt;
     display:flex; align-items:center; justify-content:center; }
   .topphotos .pcap { font-size:7pt; color:#5a6b6b; padding:2pt 1pt 0; text-align:center; }
 '''
 
 band = ('  <div class="topphotos">\n    '
-        + cell(p1, '', pos='center 40%', cls='left') + '\n    '
+        + cell(p1, '', pos='center', cls='left contain') + '\n    '
         + cell(p2, '', pos='center 32%', cls='right') + '\n  </div>\n\n')
 
 html = base.replace('</style>', top_css + '</style>')
