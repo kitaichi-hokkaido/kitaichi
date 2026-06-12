@@ -1,5 +1,5 @@
 都道府県,設置区分,学校名,所在市町村,地域ブロック,公式サイトURL,メールアドレス,お問い合わせフォームURL,備考
-長崎県,県立,長崎東中学校・高等学校,長崎市,長崎,https://www.news.ed.jp/higashi-h/,,，中高一貫校（附属中学校併設）
+長崎県,県立,長崎東中学校・高等学校,長崎市,長崎,https://www.news.ed.jp/higashi-h/,,,中高一貫校（附属中学校併設）
 長崎県,県立,長崎西高等学校,長崎市,長崎,https://www.nagasaki-nishi.ed.jp/,,,
 長崎県,県立,長崎南高等学校,長崎市,長崎,https://nagasaki-minami.net/,,,
 長崎県,県立,長崎北高等学校,長崎市,長崎,https://nagasaki-kita.ed.jp/,,,
@@ -45,7 +45,7 @@
 長崎県,県立,豊玉高等学校,対馬市,対馬,https://www2.news.ed.jp/section/toyotama-h/,,,豊玉町
 長崎県,県立,上対馬高等学校,対馬市,対馬,http://www2.news.ed.jp/section/kamitsushima-h/,,,上対馬町
 長崎県,市立,長崎市立長崎商業高等学校,長崎市,長崎,https://www.nchs.nagasaki-city.ed.jp/,,,長崎市立
-長崎県,私立,青雲中学校・高等学校,西彼杵郡長与町,長崎,https://seiun-jh.ed.jp/,,,中高一貫
+長崎県,私立,青雲中学校・高等学校,西彼杵郡時津町,長崎,https://seiun-jh.ed.jp/,,,中高一貫
 長崎県,私立,長崎南山中学校・高等学校,長崎市,長崎,https://www.n-nanzan.ed.jp/,,,中高一貫
 長崎県,私立,純心中学校・純心女子高等学校,長崎市,長崎,https://www.n-junshin.ed.jp/,,,女子校・中高一貫
 長崎県,私立,活水中学校・高等学校,長崎市,長崎,https://www.kwassui.ac.jp/chuko/,,,女子校・中高一貫
@@ -63,3 +63,6 @@
 長崎県,私立,聖和女子学院中学校・高等学校,佐世保市,県北,https://www.seiwajoshi.ed.jp/,,,女子校・中高一貫
 長崎県,私立,西海学園高等学校,佐世保市,県北,https://saikaigakuen.ed.jp/,,,
 長崎県,私立,九州文化学園高等学校,佐世保市,県北,https://high-school.kyubun.ed.jp/,,,
+長崎県,私立,久田学園佐世保女子高等学校,佐世保市,県北,https://www.hisata-gakuen.com/,,,女子校
+長崎県,私立,精道三川台中学高等学校,長崎市,長崎,https://seido-gakuen.net/secondary/,,,中高一貫・男子校
+長崎県,私立,島原中央高等学校,島原市,島原,https://shimabara-chuo.ac.jp/,,,

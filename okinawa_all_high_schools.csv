@@ -25,6 +25,7 @@
 沖縄県,県立,コザ高等学校,沖縄市,中部,http://www.koza-h.open.ed.jp/,xx330094@pref.okinawa.lg.jp,,普通・商業・全日制定時制
 沖縄県,県立,球陽高等学校,沖縄市,中部,https://www.kyuyo-h.open.ed.jp/,xx330744@pref.okinawa.lg.jp,,普通・理数・国際文・全日制
 沖縄県,県立,美来工科高等学校,沖縄市,中部,https://www.mirai-th.open.ed.jp/,xx330523@pref.okinawa.lg.jp,,工業・全日制
+沖縄県,県立,西原高等学校,西原町,那覇,https://www.nishihara-h.open.ed.jp/,xx330191@pref.okinawa.lg.jp,,普通科・全日制
 沖縄県,県立,沖縄工業高等学校,那覇市,那覇,https://www.okinawa-th.open.ed.jp/,xx330558@pref.okinawa.lg.jp,,工業・全日制
 沖縄県,県立,浦添高等学校,浦添市,那覇,https://www.urasoe-h.open.ed.jp/,xx330116@pref.okinawa.lg.jp,,普通科・全日制
 沖縄県,県立,浦添工業高等学校,浦添市,那覇,https://www.urasoe-th.open.ed.jp/,xx330574@pref.okinawa.lg.jp,,工業・全日制
@@ -41,8 +42,7 @@
 沖縄県,県立,小禄高等学校,那覇市,那覇,https://www.oroku-h.open.ed.jp/,xx330159@pref.okinawa.lg.jp,,普通科・全日制
 沖縄県,県立,開邦高等学校,南城市,那覇,https://www.kaiho-h.open.ed.jp/,xx330736@pref.okinawa.lg.jp,,普通・理数・国際文・全日制
 沖縄県,県立,泊高等学校,那覇市,那覇,https://www.tomari-h.open.ed.jp/,xx340812@pref.okinawa.lg.jp,,普通科・定時制
-沖縄県,県立,知念高等学校,与那原町,島尻,https://www.chinen-h.open.ed.jp/,xx330175@pref.okinawa.lg.jp,,普通科・全日制
-沖縄県,県立,与那原高等学校,与那原町,島尻,,,, 情報未確認（存在しない可能性あり）
+沖縄県,県立,知念高等学校,与那原町,島尻,https://www.chinen-h.open.ed.jp/,xx330175@pref.okinawa.lg.jp,,普通科・全日制（校名は知念だが現在地は与那原町）
 沖縄県,県立,南風原高等学校,南風原町,島尻,https://www.haebaru-h.open.ed.jp/,xx330213@pref.okinawa.lg.jp,,普通科・全日制
 沖縄県,県立,豊見城高等学校,豊見城市,島尻,https://www.tomishiro-h.open.ed.jp/,xx330167@pref.okinawa.lg.jp,,普通科・全日制
 沖縄県,県立,豊見城南高等学校,豊見城市,島尻,https://www.tomishironami-h.open.ed.jp/,xx330264@pref.okinawa.lg.jp,,普通科・全日制
@@ -58,7 +58,8 @@
 沖縄県,県立,八重山高等学校,石垣市,八重山,https://www.yaeyama-h.open.ed.jp/,xx331015@pref.okinawa.lg.jp,,普通科・全日制
 沖縄県,県立,八重山商工高等学校,石垣市,八重山,https://www.yaeyama-th.open.ed.jp/,xx331031@pref.okinawa.lg.jp,,工業・商業・全日制
 沖縄県,県立,八重山農林高等学校,石垣市,八重山,https://www.yaeyama-ah.open.ed.jp/,xx331023@pref.okinawa.lg.jp,,農業・全日制
-沖縄県,私立,興南高等学校,那覇市,那覇,https://konan-h.ed.jp/,soumu@konan-h.ed.jp,,男女共学
-沖縄県,私立,沖縄尚学高等学校,那覇市,那覇,https://www.okisho.ed.jp/,query@okisho.ed.jp,https://www.okisho.ed.jp/contact/,男女共学
-沖縄県,私立,沖縄カトリック高等学校,宜野湾市,中部,https://ocjs.catholic-okinawa.ed.jp/,official01@catholic-okinawa.ed.jp,,男女共学
-沖縄県,私立,昭和薬科大学附属高等学校,浦添市,那覇,https://www.showayakka-jh.ed.jp/,sy-jimu@southernx.ne.jp,,男女共学
+沖縄県,私立,興南高等学校,那覇市,那覇,https://konan-h.ed.jp/,soumu@konan-h.ed.jp,,男女共学・全日制
+沖縄県,私立,沖縄尚学高等学校,那覇市,那覇,https://www.okisho.ed.jp/,query@okisho.ed.jp,https://www.okisho.ed.jp/contact/,男女共学・全日制
+沖縄県,私立,沖縄カトリック高等学校,宜野湾市,中部,https://ocjs.catholic-okinawa.ed.jp/,official01@catholic-okinawa.ed.jp,,男女共学・全日制
+沖縄県,私立,昭和薬科大学附属高等学校,浦添市,那覇,https://www.showayakka-jh.ed.jp/,sy-jimu@southernx.ne.jp,,男女共学・全日制
+沖縄県,私立,八洲学園大学国際高等学校,本部町,北部,https://www.yashima.ac.jp/okinawa/,okinawa@yashima.ac.jp,,通信制
