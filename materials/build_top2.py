@@ -15,7 +15,8 @@ def cell(path, caption, pos='center', cls=''):
         inner = f'<img src="{path}"{style} alt="">'
     else:
         inner = '<div class="ph">［ 写真がここに入ります ］</div>'
-    return f'<div class="tp-cell {cls}">{inner}<div class="pcap">{caption}</div></div>'
+    cap = f'<div class="pcap">{caption}</div>' if caption else ''
+    return f'<div class="tp-cell {cls}">{inner}{cap}</div>'
 
 
 top_css = '''
@@ -23,7 +24,7 @@ top_css = '''
   .topphotos .tp-cell.left  { width:46%; }
   .topphotos .tp-cell.right { width:54%; }
   .topphotos img, .topphotos .ph {
-    width:100%; height:29mm; object-fit:cover; display:block;
+    width:100%; height:38mm; object-fit:cover; display:block;
     border-radius:3pt; }
   .topphotos .ph { background:#e3ecec; color:#8a9a9a; font-size:8.5pt;
     display:flex; align-items:center; justify-content:center; }
@@ -31,8 +32,8 @@ top_css = '''
 '''
 
 band = ('  <div class="topphotos">\n    '
-        + cell(p1, 'KITAICHIチーム ─ 夕張の拠点にて', pos='center 30%', cls='left') + '\n    '
-        + cell(p2, '代表　佐近　航（さこん わたる）', pos='center 22%', cls='right') + '\n  </div>\n\n')
+        + cell(p1, '', pos='center 40%', cls='left') + '\n    '
+        + cell(p2, '', pos='center 32%', cls='right') + '\n  </div>\n\n')
 
 html = base.replace('</style>', top_css + '</style>')
 # insert the photo band right after the doctitle, before the first .cols
