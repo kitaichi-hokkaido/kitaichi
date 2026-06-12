@@ -177,15 +177,17 @@
   .contact .c-info b { font-size: 10pt; }
   .note { font-size: 7pt; color: #7a8a8a; margin-top: 3pt; line-height: 1.4; }
 
-  .photo { border-radius:3pt; overflow:hidden; }
-  .photo img, .photo .ph { width:100%; display:block; object-fit:cover; }
+  .photo { border-radius:3pt; }
   .photo .ph { background:#e3ecec; color:#7a8a8a; text-align:center; font-size:8pt;
                display:flex; align-items:center; justify-content:center; }
-  .photo .pcap { font-size:7pt; color:#5a6b6b; padding:2pt 1pt 0; }
-  .photo-a img, .photo-a .ph { height:30mm; }
-  .photo-a { margin-bottom:5pt; }
-  .photo-c img, .photo-c .ph { height:34mm; }
-  .photo-c { margin:7pt 0 6pt; }
+  .photo .pcap { font-size:7pt; color:#5a6b6b; padding:2pt 1pt 0; text-align:center; }
+  /* A: full-width cover banner at top of right column */
+  .photo-a { margin-bottom:5pt; overflow:hidden; border-radius:3pt; }
+  .photo-a img, .photo-a .ph { width:100%; display:block; object-fit:cover; height:30mm; }
+  /* C: centered horizontal photo, whole team visible (no heavy crop) */
+  .photo-c { margin:6pt 0 5pt; text-align:center; }
+  .photo-c img { height:43mm; width:auto; max-width:100%; display:inline-block;
+                 border-radius:3pt; box-shadow:0 0 0 0.6pt #d3dede; }
 </style>
 </head>
 <body>
@@ -210,7 +212,7 @@
       </table>
     </div>
     <div class="col-right">
-      <div class="photo photo-a"><div class="ph">チーム写真が入ります（プレースホルダー）</div><div class="pcap">KITAICHIチーム ─ 夕張の拠点にて</div></div>
+      <div class="photo photo-a"><img src="DSC_0289.JPG" alt="KITAICHIチーム"><div class="pcap">KITAICHIチーム ─ 夕張の拠点にて</div></div>
       <h2>代表メッセージ</h2>
       <div class="message">
         <span class="lead">高校生には、地域を変えるほどの力がある。</span>

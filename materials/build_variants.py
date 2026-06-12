@@ -7,8 +7,10 @@ base = pathlib.Path('kitaichi_overview_a4.html').read_text(encoding='utf-8')
 img = sys.argv[1] if len(sys.argv) > 1 else None
 
 def photo_block(kind):
+    # case C uses a vertically-tightened banner crop so heads & feet stay in frame
+    src_file = ('team_banner.jpg' if (img and kind == 'C') else img)
     if img:
-        src = f'<img src="{img}" alt="KITAICHIチーム">'
+        src = f'<img src="{src_file}" alt="KITAICHIチーム">'
     else:
         src = '<div class="ph">チーム写真が入ります（プレースホルダー）</div>'
     cap = '<div class="pcap">KITAICHIチーム ─ 夕張の拠点にて</div>'
@@ -17,15 +19,17 @@ def photo_block(kind):
 
 # common photo CSS injected before </style>
 photo_css = '''
-  .photo { border-radius:3pt; overflow:hidden; }
-  .photo img, .photo .ph { width:100%; display:block; object-fit:cover; }
+  .photo { border-radius:3pt; }
   .photo .ph { background:#e3ecec; color:#7a8a8a; text-align:center; font-size:8pt;
                display:flex; align-items:center; justify-content:center; }
-  .photo .pcap { font-size:7pt; color:#5a6b6b; padding:2pt 1pt 0; }
-  .photo-a img, .photo-a .ph { height:30mm; }
-  .photo-a { margin-bottom:5pt; }
-  .photo-c img, .photo-c .ph { height:34mm; }
-  .photo-c { margin:7pt 0 6pt; }
+  .photo .pcap { font-size:7pt; color:#5a6b6b; padding:2pt 1pt 0; text-align:center; }
+  /* A: full-width cover banner at top of right column */
+  .photo-a { margin-bottom:5pt; overflow:hidden; border-radius:3pt; }
+  .photo-a img, .photo-a .ph { width:100%; display:block; object-fit:cover; height:30mm; }
+  /* C: centered horizontal photo, whole team visible (no heavy crop) */
+  .photo-c { margin:6pt 0 5pt; text-align:center; }
+  .photo-c img { height:43mm; width:auto; max-width:100%; display:inline-block;
+                 border-radius:3pt; box-shadow:0 0 0 0.6pt #d3dede; }
 '''
 
 # ---- Variant A: photo at top of right column (above 代表メッセージ) ----
