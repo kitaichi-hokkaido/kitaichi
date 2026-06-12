@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<style>
+  @page {
+    size: A4;
+    margin: 10mm 11mm 9mm 11mm;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  html { -weasy-hyphens: none; }
+  body {
+    font-family: "IPAPGothic", "IPAGothic", sans-serif;
+    color: #1f2933;
+    font-size: 9pt;
+    line-height: 1.5;
+  }
+  .accent { color: #0a6e6e; }
+  /* ===== Header ===== */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 2.4pt solid #0a6e6e;
+    padding-bottom: 4pt;
+    margin-bottom: 6pt;
+  }
+  .header .logo {
+    font-size: 19pt;
+    font-weight: bold;
+    letter-spacing: 1pt;
+    color: #0a3d3d;
+  }
+  .header .logo small { font-size: 9pt; font-weight: normal; color: #5a6b6b; letter-spacing: 0; }
+  .header .tagline {
+    text-align: right;
+    font-size: 8.5pt;
+    color: #0a6e6e;
+    font-weight: bold;
+    line-height: 1.35;
+  }
+  .doctitle {
+    background: #0a6e6e;
+    color: #fff;
+    font-size: 11pt;
+    font-weight: bold;
+    text-align: center;
+    padding: 3.5pt 0;
+    letter-spacing: 2pt;
+    margin-bottom: 7pt;
+  }
+  /* ===== Section heading ===== */
+  h2 {
+    font-size: 10pt;
+    color: #0a3d3d;
+    border-left: 4pt solid #0a6e6e;
+    padding-left: 6pt;
+    margin-bottom: 4pt;
+    line-height: 1.2;
+  }
+  /* ===== Two-column area ===== */
+  .cols { display: flex; gap: 9pt; margin-bottom: 7pt; }
+  .col-left { width: 46%; }
+  .col-right { width: 54%; }
+
+  /* company table */
+  table.company { width: 100%; border-collapse: collapse; }
+  table.company th, table.company td {
+    border: 0.6pt solid #cbd6d6;
+    padding: 2.6pt 5pt;
+    vertical-align: top;
+    font-size: 8.5pt;
+    line-height: 1.4;
+  }
+  table.company th {
+    background: #eef5f5;
+    color: #0a3d3d;
+    white-space: nowrap;
+    width: 27%;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  /* message box */
+  .message {
+    background: #f4f9f9;
+    border: 0.6pt solid #cbe0e0;
+    border-radius: 3pt;
+    padding: 6pt 8pt;
+    font-size: 8.5pt;
+    line-height: 1.55;
+  }
+  .message .lead {
+    font-size: 9.5pt;
+    font-weight: bold;
+    color: #0a6e6e;
+    display: block;
+    margin-bottom: 3pt;
+  }
+  .message .sign { display: block; text-align: right; margin-top: 4pt; font-size: 8pt; color: #5a6b6b; }
+
+  /* ===== Program section ===== */
+  .program-intro {
+    font-size: 8.7pt;
+    line-height: 1.5;
+    margin-bottom: 6pt;
+  }
+  .offer { display: flex; gap: 9pt; margin-bottom: 7pt; }
+  .offer .card {
+    width: 50%;
+    border: 0.6pt solid #cbd6d6;
+    border-top: 2.4pt solid #0a6e6e;
+    border-radius: 2pt;
+    padding: 5pt 7pt;
+  }
+  .offer .card .num {
+    display: inline-block;
+    background: #0a6e6e; color: #fff;
+    font-size: 7.5pt; font-weight: bold;
+    border-radius: 2pt; padding: 0.5pt 4pt; margin-bottom: 2.5pt;
+  }
+  .offer .card h3 { font-size: 9pt; color: #0a3d3d; margin-bottom: 2.5pt; line-height: 1.3; }
+  .offer .card p { font-size: 8pt; line-height: 1.45; color: #3a4a4a; }
+
+  /* strengths + flow */
+  .lower { display: flex; gap: 9pt; }
+  .lower .left { width: 40%; }
+  .lower .right { width: 60%; }
+
+  .strength { margin-bottom: 4.5pt; }
+  .strength .label {
+    font-weight: bold; color: #0a6e6e; font-size: 8.5pt;
+  }
+  .strength p { font-size: 8pt; line-height: 1.4; color: #3a4a4a; }
+
+  /* flow */
+  .flow { display: flex; flex-direction: column; gap: 3pt; }
+  .flow .step {
+    display: flex; align-items: flex-start; gap: 5pt;
+    font-size: 8pt; line-height: 1.35;
+  }
+  .flow .step .st {
+    flex: 0 0 auto;
+    background: #eef5f5; color: #0a3d3d;
+    border: 0.6pt solid #b9d4d4;
+    border-radius: 2pt;
+    font-weight: bold; font-size: 7.5pt;
+    padding: 1pt 4pt; white-space: nowrap;
+  }
+  .flow .step b { color: #0a3d3d; }
+
+  /* track record */
+  .track {
+    background: #fff7ec;
+    border: 0.6pt solid #f0d9b0;
+    border-radius: 3pt;
+    padding: 5pt 8pt;
+    margin: 7pt 0 6pt;
+    font-size: 8.3pt; line-height: 1.5;
+  }
+  .track .ttl { font-weight: bold; color: #b8741a; margin-bottom: 2pt; }
+  .track ul { list-style: none; }
+  .track li { padding-left: 11pt; position: relative; margin-bottom: 1pt; }
+  .track li::before { content: "●"; position: absolute; left: 0; color: #d39431; font-size: 6pt; top: 2.5pt; }
+
+  /* footer / contact */
+  .contact {
+    display: flex; justify-content: space-between; align-items: center;
+    background: #0a3d3d; color: #fff;
+    border-radius: 3pt;
+    padding: 6pt 11pt;
+    margin-top: 3pt;
+  }
+  .contact .c-ttl { font-size: 9.5pt; font-weight: bold; }
+  .contact .c-ttl small { display: block; font-size: 7.5pt; font-weight: normal; color: #bcd; margin-top: 1pt; }
+  .contact .c-info { text-align: right; font-size: 8.7pt; line-height: 1.5; }
+  .contact .c-info b { font-size: 10pt; }
+  .note { font-size: 7pt; color: #7a8a8a; margin-top: 3pt; line-height: 1.4; }
+
+  .topphotos { display:flex; gap:7pt; margin:0 0 7pt; }
+  .topphotos .tp-cell { width:50%; }
+  .topphotos img, .topphotos .ph {
+    width:100%; height:30mm; object-fit:cover; display:block;
+    border-radius:3pt; }
+  .topphotos .ph { background:#e3ecec; color:#8a9a9a; font-size:8.5pt;
+    display:flex; align-items:center; justify-content:center; }
+  .topphotos .pcap { font-size:7pt; color:#5a6b6b; padding:2pt 1pt 0; text-align:center; }
+</style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">株式会社KITAICHI <small>（キタイチ）</small></div>
+    <div class="tagline">チャレンジする高校生は、<br>地域が変わるきっかけになる。</div>
+  </div>
+
+  <div class="doctitle">会社概要 ＆ クラウドファンディング活用サポートのご案内</div>
+
+  <div class="topphotos">
+    <div class="tp-cell"><img src="DSC_0289.JPG" alt=""><div class="pcap">KITAICHIチーム ─ 夕張の拠点にて</div></div>
+    <div class="tp-cell"><div class="ph">［ 写真がここに入ります ］</div><div class="pcap">（写真キャプション）</div></div>
+  </div>
+
+  <!-- 上段：会社概要 ＋ 代表メッセージ -->
+  <div class="cols">
+    <div class="col-left">
+      <h2>会社概要</h2>
+      <table class="company">
+        <tr><th>会社名</th><td>株式会社KITAICHI（キタイチ）</td></tr>
+        <tr><th>代表者</th><td>代表　佐近　航（さこん わたる）</td></tr>
+        <tr><th>事業内容</th><td>まちづくり・地域創生に関する事業のサポート／クラウドファンディングの企画・運営伴走</td></tr>
+        <tr><th>主な強み</th><td>CAMPFIRE パートナー企業。元自治体職員・元ふるさと納税サイト運営者・ファンドレイザーが在籍</td></tr>
+        <tr><th>お問い合わせ</th><td>担当：佐近　航<br>メール：info@kita1.jp</td></tr>
+      </table>
+    </div>
+    <div class="col-right">
+      <h2>代表メッセージ</h2>
+      <div class="message">
+        <span class="lead">高校生には、地域を変えるほどの力がある。</span>
+        私は財政破綻を経験した夕張市役所で、地域再生や高校魅力化事業を担当していました。誰もが新しい一歩を踏み出せずにいたなか、夕張高校の生徒会長が「夕張に言い訳するのではなく、夕張だからできることに目を向けたい」と大人たちへ語りかけ、その言葉が抜本的な再生計画の見直しを動かしました。だからこそ、高校生のチャレンジに資金と応援を届けるサポートをさせてください。
+        <span class="sign">株式会社KITAICHI 代表　佐近　航</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- プログラム概要 -->
+  <h2>プログラム概要 ── 高校生のチャレンジを「クラウドファンディング」で実現します</h2>
+  <p class="program-intro">
+    高校生が主体的に地域のために挑戦し、町内外から応援を集めて実現する経験は、生徒の成長にも地域の未来にも大きな意義があります。
+    「やりたいけれど予算がない」というハードルを、企画から支援獲得までの伴走で乗り越えます。提供内容は次の2つです。
+  </p>
+
+  <div class="offer">
+    <div class="card">
+      <span class="num">提供①</span>
+      <h3>クラウドファンディングで地域での探究活動を実現</h3>
+      <p>生徒の「地域のためにやりたいこと」を、企画づくりから支援の獲得まで伴走し、実現まで導きます。（例：花火大会・地域イベント 等）</p>
+    </div>
+    <div class="card">
+      <span class="num">提供②</span>
+      <h3>総合的な探究学習の伴走／単発授業にも対応</h3>
+      <p>年間を通じた探究の伴走のほか、1回〜数回の授業でクラウドファンディングを解説することも可能。予算に応じ柔軟に対応します。</p>
+    </div>
+  </div>
+
+  <div class="lower">
+    <div class="left">
+      <h2>サポートの強み</h2>
+      <div class="strength">
+        <span class="label">① プロによる伴走</span>
+        <p>元自治体職員・元サイト運営者・ファンドレイザーが、ページ制作・返礼品設計・プロモーションを支援。</p>
+      </div>
+      <div class="strength">
+        <span class="label">② 進行管理で負担を軽減</span>
+        <p>企画から終了までスケジュールを管理し、できる限り負担のかからない運営を実現。</p>
+      </div>
+      <div class="strength">
+        <span class="label">③ 850件超の実績に基づく伴走力</span>
+        <p>密に連絡を取り、生徒を一人にしないモチベーション面まで最後まで寄り添います。</p>
+      </div>
+    </div>
+    <div class="right">
+      <h2>サポートの流れ（5ステップ）</h2>
+      <div class="flow">
+        <div class="step"><span class="st">01 企画設計</span><span>ヒアリング・スケジュール作成・企画内容の整理</span></div>
+        <div class="step"><span class="st">02 ページ制作</span><span>構成作成・文章入力・写真準備・トップ画像制作・審査対応</span></div>
+        <div class="step"><span class="st">03 リターン設計</span><span>返礼品のアイデア出し・内容検討・ページへの反映</span></div>
+        <div class="step"><span class="st">04 プロモ準備</span><span>告知方法のヒアリング・戦略策定・告知先リスト・例文提供</span></div>
+        <div class="step"><span class="st">05 公開後対応</span><span>告知活動・改善アドバイス・支援者対応・リターン発送 ※赤字は主催者対応</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="track">
+    <div class="ttl">これまでの実績・取り組み</div>
+    <ul>
+      <li><b>ふるさとチョイス クラウドファンディング</b>のサイト運営業務を受託し、全国自治体 <b>850プロジェクト</b>の立ち上げをサポート（令和7年度）。</li>
+      <li><b>三重県立相可高校</b>の総合的な探究学習を1年間伴走。生徒が地域貢献の取り組みを具体化し、クラファンで実現するまで支援。</li>
+      <li><b>北海道立上ノ国高校</b>の生徒会が、町民も楽しめる学校祭を目指し花火大会を企画。募金とクラファンで幅広く応援を獲得。</li>
+    </ul>
+  </div>
+
+  <div class="contact">
+    <div class="c-ttl">ご相談・お問い合わせ
+      <small>まずは雑談レベルでもOKです。お気軽にご相談ください。</small>
+    </div>
+    <div class="c-info">
+      株式会社KITAICHI ／ 担当：佐近　航<br>
+      メール：<b>info@kita1.jp</b>
+    </div>
+  </div>
+  <p class="note">※サポート内容・料金は予算等に合わせて柔軟にご相談に応じます（別途サイト手数料）。契約先は学校・保護者会等の任意団体でも対応可能です。<br>※基本はオンライン対応。交通費のご負担で対面授業にも参加いたします。</p>
+
+</body>
+</html>
