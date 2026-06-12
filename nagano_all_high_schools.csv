@@ -1,7 +1,7 @@
 都道府県,設置区分,学校名,所在市町村,地域ブロック,公式サイトURL,メールアドレス,お問い合わせフォームURL,備考
 長野県,県立,長野県飯山高等学校,飯山市,長野,https://www.nagano-c.ed.jp/iiyama/,,https://www.nagano-c.ed.jp/iiyama/contact.html,
 長野県,県立,長野県下高井農林高等学校,下高井郡木島平村,長野,https://www.nagano-c.ed.jp/nourinn/,,,
-長野県,県立,長野県北部高等学校,中野市,長野,https://www.nagano-c.ed.jp/hokubu/,,,
+長野県,県立,長野県北部高等学校,上水内郡飯綱町,長野,https://www.nagano-c.ed.jp/hokubu/,,,
 長野県,県立,長野県中野西高等学校,中野市,長野,https://www.nagano-c.ed.jp/inuwashi/,,,
 長野県,県立,長野県中野立志館高等学校,中野市,長野,https://www.nagano-c.ed.jp/rishikan/,,,定時制併設
 長野県,県立,長野県須坂高等学校,須坂市,長野,https://www.nagano-c.ed.jp/suzaka/,,,
@@ -39,7 +39,7 @@
 長野県,県立,長野県松本美須々ヶ丘高等学校,松本市,松本,https://www.nagano-c.ed.jp/msz-hs/,,,
 長野県,県立,長野県松本県ヶ丘高等学校,松本市,松本,https://www.nagano-c.ed.jp/agata/,,,
 長野県,県立,長野県松本工業高等学校,松本市,松本,https://www.nagano-c.ed.jp/matuko/,,,
-長野県,県立,長野県松本筑摩高等学校,松本市,松本,https://www.nagano-c.ed.jp/m-tkm-hs/,,,通信制併設
+長野県,県立,長野県松本筑摩高等学校,松本市,松本,https://www.nagano-c.ed.jp/m-tkm-hs/,,,定時制・通信制併設。独自サイト: http://www.chikuma-hs.jp/
 長野県,県立,長野県塩尻志学館高等学校,塩尻市,松本,https://www.nagano-c.ed.jp/kikyo/,,,
 長野県,県立,長野県梓川高等学校,松本市,松本,https://www.nagano-c.ed.jp/azusa-hs/,,,
 長野県,県立,長野県豊科高等学校,安曇野市,松本,https://www.nagano-c.ed.jp/toyoko/,,,
@@ -63,7 +63,7 @@
 長野県,県立,長野県上伊那農業高等学校,上伊那郡南箕輪村,伊那,https://jono.ed.jp/,,,
 長野県,県立,長野県箕輪進修高等学校,上伊那郡箕輪町,伊那,https://www.nagano-c.ed.jp/minowa/,,,多部制・単位制
 長野県,県立,長野県箕輪工業高等学校,上伊那郡箕輪町,伊那,https://www.nagano-c.ed.jp/minoko/,,,
-長野県,県立,長野県飯田高等学校,飯田市,飯田,https://www.nagano-c.ed.jp/iida/,,,
+長野県,県立,長野県飯田高等学校,飯田市,飯田,https://iida-hs.net/,,,旧サイト: https://www.nagano-c.ed.jp/iida-hs/
 長野県,県立,長野県飯田風越高等学校,飯田市,飯田,https://www.nagano-c.ed.jp/fuetsuhs/,,,
 長野県,県立,長野県飯田OIDE長姫高等学校,飯田市,飯田,https://www.nagano-c.ed.jp/oideosa/,,,
 長野県,県立,長野県阿智高等学校,下伊那郡阿智村,飯田,https://www.nagano-c.ed.jp/achihs/,,,
@@ -75,7 +75,10 @@
 長野県,私立,文化学園長野高等学校,長野市,長野,https://bgh.gakuen-nagano.ac.jp/,,https://bgh.gakuen-nagano.ac.jp/inq/,
 長野県,私立,上田西高等学校,上田市,上田,https://uedanishi.ed.jp/,,,
 長野県,私立,佐久長聖高等学校,佐久市,佐久,https://sakuchosei.ed.jp/,senior@sakuchosei.ed.jp,https://sakuchosei.ed.jp/contact/hs-toiawase/,
+長野県,私立,松商学園高等学校,松本市,松本,https://www.matsusho-h.ed.jp/,,,
 長野県,私立,松本秀峰中等教育学校,松本市,松本,https://www.shuho.ed.jp/,,,中等教育学校（前期・後期課程一貫）
 長野県,私立,松本第一高等学校,松本市,松本,https://www.matsumoto1-h.ed.jp/,,,
 長野県,私立,東京都市大学塩尻高等学校,塩尻市,松本,https://www.tcu-shiojiri.ed.jp/,,,
 長野県,私立,東海大学付属諏訪高等学校,茅野市,諏訪,https://www.suwa.tokai.ed.jp/,,,
+長野県,私立,伊那西高等学校,伊那市,伊那,https://www.inanishi.net/,,,女子校（学校法人高松学園）
+長野県,私立,飯田女子高等学校,飯田市,飯田,https://i-joshi.com/,,,女子校
