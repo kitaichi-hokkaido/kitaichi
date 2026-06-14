@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ふるさと住民登録制度 企画運営サポートのご提案｜KITAICHI</title>
+<style>
+  :root{
+    --navy:#1b3a5b; --blue:#2f6fb0; --accent:#e8732a; --light:#f4f7fa;
+    --ink:#1d2733; --sub:#5a6b7b; --line:#dbe4ec;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Yu Gothic","Meiryo",sans-serif;
+    background:#5b6772; color:var(--ink); line-height:1.7; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  .deck{max-width:1120px;margin:0 auto;padding:28px 16px;}
+  .slide{position:relative; background:#fff; border-radius:14px; overflow:hidden;
+    aspect-ratio:16/9; margin:0 0 26px; box-shadow:0 10px 30px rgba(0,0,0,.25);
+    padding:52px 60px; display:flex; flex-direction:column;}
+  .num{position:absolute;right:26px;bottom:18px;font-size:13px;color:var(--sub);}
+  .tag{display:inline-block;background:var(--accent);color:#fff;font-size:14px;
+    font-weight:700;padding:4px 14px;border-radius:20px;margin-bottom:18px;align-self:flex-start;}
+  h1{font-size:38px;color:var(--navy);line-height:1.35;margin-bottom:18px;}
+  h2{font-size:30px;color:var(--navy);line-height:1.4;margin-bottom:20px;
+    border-left:8px solid var(--accent);padding-left:18px;}
+  h3{font-size:21px;color:var(--blue);margin:14px 0 6px;}
+  p{font-size:18px;margin-bottom:12px;}
+  .lead{font-size:19px;color:var(--sub);}
+  ul{list-style:none;}
+  li{font-size:18px;padding:6px 0 6px 30px;position:relative;}
+  li::before{content:"";position:absolute;left:4px;top:14px;width:10px;height:10px;
+    background:var(--accent);border-radius:50%;}
+  .center{justify-content:center;align-items:center;text-align:center;}
+  .cover{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;}
+  .cover h1{color:#fff;font-size:44px;}
+  .cover .sub{font-size:20px;opacity:.92;margin-top:10px;}
+  .cover .kicker{font-size:18px;letter-spacing:2px;opacity:.85;margin-bottom:14px;}
+  .section{background:linear-gradient(135deg,var(--navy),var(--blue));color:#fff;}
+  .section h1{color:#fff;}
+  .flow{display:flex;gap:10px;flex-wrap:wrap;margin:16px 0;}
+  .flow span{background:var(--light);border:1px solid var(--line);border-radius:30px;
+    padding:8px 18px;font-size:16px;font-weight:700;color:var(--navy);}
+  .flow .arrow{background:none;border:none;color:var(--accent);padding:8px 2px;}
+  .cols{display:flex;gap:26px;}
+  .col{flex:1;}
+  .stat{display:flex;gap:24px;justify-content:center;margin-top:20px;flex-wrap:wrap;}
+  .stat .box{background:var(--light);border-radius:12px;padding:22px 28px;text-align:center;min-width:200px;}
+  .stat .big{font-size:38px;color:var(--accent);font-weight:800;}
+  .stat .cap{font-size:15px;color:var(--sub);}
+  table{width:100%;border-collapse:collapse;margin-top:12px;font-size:16.5px;}
+  th,td{border:1px solid var(--line);padding:12px 14px;text-align:left;vertical-align:top;}
+  th{background:var(--navy);color:#fff;font-weight:700;}
+  td:first-child{background:var(--light);font-weight:700;color:var(--navy);width:140px;}
+  .stairs{display:flex;flex-direction:column;gap:8px;margin-top:6px;}
+  .step{display:flex;align-items:flex-start;gap:14px;background:var(--light);
+    border-left:6px solid var(--blue);border-radius:8px;padding:10px 16px;}
+  .step .lv{background:var(--blue);color:#fff;font-weight:800;border-radius:6px;
+    padding:4px 12px;font-size:15px;white-space:nowrap;}
+  .step.s5{border-left-color:var(--accent);} .step.s5 .lv{background:var(--accent);}
+  .step .txt{font-size:16px;} .step .txt b{color:var(--navy);}
+  .note{background:#fff6ef;border:1px solid #f3d3b8;border-radius:10px;padding:14px 18px;
+    font-size:17px;color:#a4541f;margin-top:14px;}
+  .quote{background:var(--light);border-radius:12px;padding:22px 26px;font-size:18px;margin-top:10px;}
+  .small{font-size:16px;color:var(--sub);}
+  .profile{font-size:17px;}
+  .staff{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;}
+  .staff .card{flex:1 1 45%;background:var(--light);border-radius:10px;padding:16px 18px;}
+  .staff .card h3{margin-top:0;}
+  .cta{background:var(--accent);color:#fff;display:inline-block;padding:14px 28px;
+    border-radius:40px;font-size:20px;font-weight:800;margin-top:14px;}
+  .mail{font-size:22px;font-weight:800;color:var(--navy);}
+  @media print{
+    body{background:#fff;}
+    .deck{max-width:none;padding:0;}
+    .slide{margin:0;border-radius:0;box-shadow:none;page-break-after:always;
+      width:100%;height:100vh;aspect-ratio:auto;}
+  }
+</style>
+</head>
+<body>
+<div class="deck">
+
+  <!-- 1 表紙 -->
+  <section class="slide cover center">
+    <div class="kicker">ふるさと住民登録制度 企画運営サポートのご提案</div>
+    <h1>地域の応援者を増やし、<br>継続的な関わりをつくる</h1>
+    <div class="sub">～クラウドファンディングで培った「地域と人をつなぐ力」を、<br>ふるさと住民登録制度の運用へ～</div>
+    <div class="num" style="color:#cdd9e6">株式会社KITAICHI</div>
+  </section>
+
+  <!-- 2 一言サマリー -->
+  <section class="slide">
+    <span class="tag">このご提案を一言でいうと</span>
+    <h1>KITAICHIが、制度の「企画→募集→担い手活動」まで伴走します</h1>
+    <div class="flow">
+      <span>① 制度活用の企画設計</span><span class="arrow">▶</span>
+      <span>② 登録者の募集支援</span><span class="arrow">▶</span>
+      <span>③ 担い手活動の運営支援</span>
+    </div>
+    <p>クラウドファンディングのプロとして培ったノウハウで、地域の魅力を全国へ届けます。</p>
+    <div class="note">費用は<b>特別交付税措置の範囲内</b>で検討可能です（総務省確認済み）。まずは雑談からでも大丈夫です。</div>
+    <div class="num">2</div>
+  </section>
+
+  <!-- 3 制度の可能性 -->
+  <section class="slide">
+    <h2>ふるさと住民登録制度は、地域の新しい可能性です</h2>
+    <p>ふるさと住民登録制度は、単に地域外の人に登録してもらう制度ではありません。</p>
+    <p>地域を応援したい人、地域に関わりたい人、地域の未来に参加したい人とつながり、<b>継続的な関係を育てていく</b>ための新しい仕組みです。</p>
+    <p>ふるさと納税が「寄附」という形で地域との接点を広げたように、ふるさと住民登録制度は<b>「関わり」という形で地域の応援者を増やしていく</b>可能性があります。</p>
+    <div class="num">3</div>
+  </section>
+
+  <!-- 4 不安 -->
+  <section class="slide">
+    <span class="tag">運用検討にあたり</span>
+    <h1>こんな不安はありませんか？</h1>
+    <ul>
+      <li>この制度を<b>どう活用すればよいか</b>わからない</li>
+      <li>通常業務で手一杯で、<b>企画や運用まで手が回らない</b></li>
+      <li>担い手活動の<b>具体的なイメージ</b>がわかない</li>
+    </ul>
+    <div class="num">4</div>
+  </section>
+
+  <!-- 5 伴走 -->
+  <section class="slide center">
+    <span class="tag" style="align-self:center">その不安に</span>
+    <h1>KITAICHIが伴走します！</h1>
+    <p class="lead">ふるさと住民登録制度は、クラウドファンディングに非常に近い構造です。<br>制度設計・募集・担い手活動の企画運営まで、まるごと伴走します。</p>
+    <div class="num">5</div>
+  </section>
+
+  <!-- 6 CFと似ている -->
+  <section class="slide">
+    <h2>ふるさと住民登録制度は、<br>クラウドファンディングとよく似ています</h2>
+    <div class="cols">
+      <div class="col">
+        <h3>クラウドファンディングで大切なこと</h3>
+        <ul>
+          <li>取り組みの背景や想いを伝える</li>
+          <li>地域の魅力や課題をわかりやすく届ける</li>
+          <li>共感してくれる人を増やす</li>
+          <li>応援や参加を募る</li>
+          <li>支援後も継続的な関係をつくる</li>
+        </ul>
+      </div>
+      <div class="col" style="display:flex;align-items:center;">
+        <p class="lead">ふるさと住民登録制度も同様に、これらを通して<b>地域に関わる人を増やしていく</b>必要があります。<br><br>だからこそ、CFのノウハウがそのまま活きます。</p>
+      </div>
+    </div>
+    <div class="num">6</div>
+  </section>
+
+  <!-- 7 セクション -->
+  <section class="slide section center">
+    <h1>なぜKITAICHIが支援できるのか</h1>
+    <div class="num" style="color:#cdd9e6">7</div>
+  </section>
+
+  <!-- 8 プロフェッショナル -->
+  <section class="slide">
+    <h2>KITAICHIがサポートいたします</h2>
+    <p>KITAICHIは、クラウドファンディングサポートのプロフェッショナルとして、地域の挑戦を全国へ届ける活動を行ってきました。</p>
+    <p>私たちが取り組んできたのは、単なる資金調達ではありません。<b>地域で本気で挑戦する人の想いを整理し、ストーリーとして届け、共感する応援者とつなげること</b>です。</p>
+    <p>その経験は、ふるさと住民登録制度における<b>担い手活動の設計・募集・運用</b>に、そのまま活かすことができます。</p>
+    <div class="num">8</div>
+  </section>
+
+  <!-- 9 実績 -->
+  <section class="slide center">
+    <h2 style="align-self:flex-start">まちづくりプロジェクトを専門にサポート</h2>
+    <p>KITAICHIは、CAMPFIREのパートナー企業として、まちづくりに関するプロジェクトを専門にサポートしています。</p>
+    <div class="stat">
+      <div class="box"><div class="big">35件</div><div class="cap">サポート実績</div></div>
+      <div class="box"><div class="big">6,488万円</div><div class="cap">累計支援総額</div></div>
+      <div class="box"><div class="big">4,060人</div><div class="cap">累計支援者数</div></div>
+    </div>
+    <div class="num">9</div>
+  </section>
+
+  <!-- 10 スケール訴求（新規） -->
+  <section class="slide">
+    <span class="tag">私たちの強み</span>
+    <h1>地域の取り組みを「全国」へ届けてきました</h1>
+    <p>ふるさと住民登録制度は、地域の中だけで完結する制度ではありません。地域の外にいる<b>「まだ出会っていない応援者」</b>とつながってこそ、力を発揮します。</p>
+    <ul>
+      <li>令和7年度、ふるさとチョイス（GCF）から業務委託を受け、<b>全国850プロジェクト</b>の立ち上げを支援</li>
+      <li>CAMPFIREパートナーとして、地域の挑戦を全国の支援者へ</li>
+      <li>累計支援者<b>4,060人</b>——「応援したい人」とつながってきた実績</li>
+    </ul>
+    <div class="note">ふるさと納税が「寄附」で全国に広がったように、ふるさと住民登録制度は<b>「関わり」で全国に広がる</b>可能性があります。その最初の一歩を、御地から一緒に。</div>
+    <div class="num">10</div>
+  </section>
+
+  <!-- 11 イベント実績 -->
+  <section class="slide">
+    <h2>セミナー・地域イベントの企画運営も</h2>
+    <p>クラウドファンディングに関するセミナーや地域イベントの企画運営、ファンミーティングの開催などにも取り組んでいます。</p>
+    <ul>
+      <li>夕張市農協の婚活イベントの企画運営</li>
+      <li>大学生を集めたリアルセミナーの開催</li>
+      <li>地域創生イベントへの登壇・開催</li>
+    </ul>
+    <div class="num">11</div>
+  </section>
+
+  <!-- 12 セクション -->
+  <section class="slide section center">
+    <h1>ご提案内容</h1>
+    <div class="num" style="color:#cdd9e6">12</div>
+  </section>
+
+  <!-- 13 役割分担（新規） -->
+  <section class="slide">
+    <span class="tag">「手が回らない」をそのままにしません</span>
+    <h1>自治体の負担を、KITAICHIが巻き取ります</h1>
+    <table>
+      <tr><th>工程</th><th>KITAICHIが担うこと</th><th>自治体にお願いすること</th></tr>
+      <tr><td>企画</td><td>コンセプト設計・たたき台作成</td><td>地域の想いの共有・方向性の決定</td></tr>
+      <tr><td>募集</td><td>ページ・チラシ・SNS発信の制作</td><td>最終確認・地域情報の提供</td></tr>
+      <tr><td>担い手活動</td><td>企画・運営・当日対応</td><td>参加・地域内の橋渡し</td></tr>
+    </table>
+    <p class="small" style="margin-top:14px">自治体の皆さまは「判断」と「地域とのつなぎ役」に集中していただけます。</p>
+    <div class="num">13</div>
+  </section>
+
+  <!-- 14 登録で終わらせない -->
+  <section class="slide">
+    <h2>ふるさと住民登録制度を「登録」で終わらせない</h2>
+    <p>KITAICHIが目指すのは、制度を<b>単なる登録制度で終わらせないこと</b>です。登録した人が地域に関心を持ち、担い手活動に参加し、継続的に地域と関わる流れをつくります。</p>
+    <div class="flow">
+      <span>登録</span><span class="arrow">▶</span>
+      <span>共感</span><span class="arrow">▶</span>
+      <span>参加</span><span class="arrow">▶</span>
+      <span>交流</span><span class="arrow">▶</span>
+      <span>継続的な関係</span><span class="arrow">▶</span>
+      <span style="background:var(--accent);color:#fff">担い手・応援者へ</span>
+    </div>
+    <p>この流れを設計することで、制度を<b>地域の未来につながる仕組み</b>へ育てていきます。</p>
+    <div class="num">14</div>
+  </section>
+
+  <!-- 15 サポート1 -->
+  <section class="slide">
+    <span class="tag">サポート内容 ①</span>
+    <h1>制度活用の企画設計</h1>
+    <p>自治体ごとの地域課題や強みを整理し、制度をどう活用するかを一緒に検討します。</p>
+    <div class="cols"><div class="col"><ul>
+      <li>制度活用のコンセプト設計</li>
+      <li>どのような人に登録してほしいかの整理</li>
+      <li>地域の魅力や課題の言語化</li>
+    </ul></div><div class="col"><ul>
+      <li>担い手活動の方向性整理</li>
+      <li>ベーシック／プレミアム登録者の関係設計 <span class="small">※登録区分</span></li>
+      <li>登録者に伝えるメッセージ設計</li>
+    </ul></div></div>
+    <div class="num">15</div>
+  </section>
+
+  <!-- 16 サポート2 -->
+  <section class="slide">
+    <span class="tag">サポート内容 ②</span>
+    <h1>登録者の募集支援</h1>
+    <p>制度を多くの人に知ってもらい、登録につなげるための情報発信を支援します。</p>
+    <div class="cols"><div class="col"><ul>
+      <li>募集ページの構成づくり</li>
+      <li>パンフレットやチラシ等の制作支援</li>
+      <li>SNSやメールでの発信内容の設計</li>
+    </ul></div><div class="col"><ul>
+      <li>クラウドファンディング的な募集導線の設計</li>
+      <li>地域外の応援者に届くメッセージづくり</li>
+      <li>プロモーション戦略の整理</li>
+    </ul></div></div>
+    <div class="note">ポイントは「登録してください」ではなく、<b>「この地域の未来に関わってください」</b>というメッセージにすることです。</div>
+    <div class="num">16</div>
+  </section>
+
+  <!-- 17 サポート3 -->
+  <section class="slide">
+    <span class="tag">サポート内容 ③</span>
+    <h1>担い手活動の企画・運営支援</h1>
+    <p class="small">担い手活動は自治体ごとに大きく変わります。地域の状況に合わせ、皆さまと一緒に企画します。<b>例えば、こんなことができます。</b></p>
+    <div class="cols"><div class="col"><ul>
+      <li>地域ファンミーティング</li>
+      <li>新商品・特産品のモニター会</li>
+      <li>商品開発アイデア募集</li>
+      <li>空き家活用アイデア募集</li>
+    </ul></div><div class="col"><ul>
+      <li>地域おこし協力隊・高校生との交流</li>
+      <li>町長・村長・地域事業者との交流会</li>
+      <li>農業・漁業・林業・酒蔵などの体験プログラム</li>
+      <li>まちづくり会議へのオブザーバー参加</li>
+    </ul></div></div>
+    <div class="num">17</div>
+  </section>
+
+  <!-- 18 参加の階段 -->
+  <section class="slide">
+    <h2>担い手活動は「参加の階段」で設計します</h2>
+    <div class="stairs">
+      <div class="step"><span class="lv">Lv.1 知る</span><span class="txt">SNSやメールで活動を知る／地域の情報を受け取る</span></div>
+      <div class="step"><span class="lv">Lv.2 応援する</span><span class="txt">情報発信に協力／アンケート・投票に参加／地域の商品を購入</span></div>
+      <div class="step"><span class="lv">Lv.3 交流する</span><span class="txt">オンライン交流会・ファンミーティングに参加／担い手と話す</span></div>
+      <div class="step"><span class="lv">Lv.4 参加する</span><span class="txt">現地イベントに参加／運営を手伝う／モニター・企画会議に参加</span></div>
+      <div class="step s5"><span class="lv">Lv.5 担い手になる</span><span class="txt">地域プロジェクトに継続参加／新しい取り組みを共創／<b>移住・二地域居住・起業</b>へ</span></div>
+    </div>
+    <div class="num">18</div>
+  </section>
+
+  <!-- 19 事例ストーリー（新規） -->
+  <section class="slide">
+    <span class="tag">イメージ</span>
+    <h1>「応援者」が「担い手」に育つ</h1>
+    <div class="quote">
+      <p>都内在住の<b>Aさん</b>。最初はSNSで御地の情報を受け取るだけ（<b>Lv.1</b>）。</p>
+      <p>特産品のモニター会に申し込み（<b>Lv.4</b>）、商品開発アイデア募集で意見が採用される。</p>
+      <p>翌年には企画会議の常連に（<b>Lv.5</b>）。「いつか移住したい」と話すように。</p>
+    </div>
+    <p style="margin-top:14px">——こうして登録者が、少しずつ地域の担い手へ育っていきます。</p>
+    <div class="num">19</div>
+  </section>
+
+  <!-- 20 効果 -->
+  <section class="slide">
+    <h2>期待できる効果</h2>
+    <div class="cols"><div class="col"><ul>
+      <li>地域外の応援者を可視化できる</li>
+      <li>継続的に情報を届けられる関係人口が増える</li>
+      <li>地域イベントや活動への参加者が増える</li>
+    </ul></div><div class="col"><ul>
+      <li>地域の担い手不足の解消につながる</li>
+      <li>ふるさと納税・CFとの連携がしやすくなる</li>
+      <li>地域のファンが増え、将来的な移住・関係人口拡大へ</li>
+    </ul></div></div>
+    <div class="num">20</div>
+  </section>
+
+  <!-- 21 財源 -->
+  <section class="slide">
+    <h2>活用できる財源</h2>
+    <div class="cols"><div class="col">
+      <h3>制度の準備・運用</h3>
+      <p class="small">事業費1,000万円を上限に、50％×財政力補正により特別交付税措置。本業務への活用も可能と<b>総務省に確認済み</b>です。</p>
+    </div><div class="col">
+      <h3>ふるさと住民コーディネーターの設置</h3>
+      <p class="small">500万円の特別交付税措置。事業者が業務委託として受託しても問題ない旨を<b>総務省に確認済み</b>です。</p>
+    </div></div>
+    <div class="note">自治体様ごとに課題が異なるため、取り組む内容や予算に応じて柔軟にご相談可能です。これらの財源の範囲内で検討させていただきます。</div>
+    <div class="num">21</div>
+  </section>
+
+  <!-- 22 代表 -->
+  <section class="slide">
+    <h2>株式会社KITAICHI　代表取締役　佐近 航（さこん わたる）</h2>
+    <p class="profile">私は、財政破綻を経験した夕張市役所で、地域再生を担当していました。そこで痛感したのが<b>地域のプレイヤー不足</b>です。地域を良くするアイデアや知恵があっても、それを実行する担い手が足りていません。</p>
+    <p class="profile">その課題を解決するためにKITAICHIを創業しました。地域に新しいことを起こす人たちのクラウドファンディングを通じて、情報発信や応援者との継続的な関係づくりに取り組んでいます。</p>
+    <p class="profile">ふるさと住民登録制度は、地域が大切にする価値に共感する応援者の<b>質と量</b>を高め、プレイヤー不足を解決する制度です。最大限活用するため、協働させてください。</p>
+    <div class="num">22</div>
+  </section>
+
+  <!-- 23 スタッフ -->
+  <section class="slide">
+    <h2>運営スタッフのご紹介</h2>
+    <div class="staff">
+      <div class="card"><h3>佐近 航</h3><p class="small">行政経験とふるさと納税サイト運営の経験。地域創生プロジェクトはお任せください。</p></div>
+      <div class="card"><h3>宮岸 由海</h3><p class="small">ふるさと納税サイト運営を経験。学生のプロジェクトに多く関わっています。</p></div>
+      <div class="card"><h3>佐藤 千咲</h3><p class="small">ふるさと納税サイト運営を経て准認定ファンドレイザーを取得。地域イベントの企画運営にも従事。</p></div>
+      <div class="card"><h3>松代 空</h3><p class="small">宿とカフェ運営を経てふるさと納税サイト運営を経験。宿・飲食の立ち上げはぜひご相談を。</p></div>
+    </div>
+    <div class="num">23</div>
+  </section>
+
+  <!-- 24 最後に -->
+  <section class="slide section center">
+    <h1>最後に</h1>
+    <p class="lead" style="color:#eaf1f8;max-width:820px">KITAICHIは、クラウドファンディングを通じて地域の挑戦を全国へ届けてきました。ふるさと住民登録制度においても、地域の担い手と応援者をつなぎ、継続的に地域へ関わる人を増やすことで、<b style="color:#fff">地域の活性化と担い手不足の解消</b>に貢献させてください！</p>
+    <div class="num" style="color:#cdd9e6">24</div>
+  </section>
+
+  <!-- 25 CTA -->
+  <section class="slide center">
+    <h1>まずは雑談レベルでも大丈夫です</h1>
+    <div class="cta">まず30分のオンライン相談から</div>
+    <p style="margin-top:18px">御地に合った活用アイデアを、無料でご提案します。<br>「うちの町だと何ができる？」を、一緒に考えるところから始めましょう。</p>
+    <p style="margin-top:18px">担当：佐近　／　<span class="mail">info@kita1.jp</span></p>
+    <div class="num">25</div>
+  </section>
+
+</div>
+</body>
+</html>
