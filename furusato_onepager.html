@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>ふるさと住民登録制度 企画運営サポート｜概要版</title>
+<style>
+  @page { size: A4 portrait; margin: 0; }
+  :root{
+    --navy:#13314f; --navy2:#1f4d77; --blue:#2f80c4; --sky:#5aa9e6;
+    --accent:#f2762e; --accent2:#ffb066; --ink:#1b2733; --sub:#5d6f80;
+    --light:#f2f6fa; --line:#e2eaf1; --green:#1f8a4d;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{font-family:"Hiragino Kaku Gothic ProN","Yu Gothic UI","Meiryo",sans-serif;
+    background:#5b6772;-webkit-print-color-adjust:exact;print-color-adjust:exact;color:var(--ink);}
+  .page{width:210mm;height:297mm;margin:14px auto;background:#fff;position:relative;
+    display:flex;flex-direction:column;box-shadow:0 10px 30px rgba(0,0,0,.3);overflow:hidden;}
+  /* header */
+  .hdr{background:linear-gradient(120deg,var(--navy),var(--navy2));color:#fff;padding:13px 18px 12px;position:relative;overflow:hidden;}
+  .hdr .circ{position:absolute;width:160px;height:160px;border-radius:50%;background:rgba(90,169,230,.22);top:-70px;right:-30px;}
+  .hdr .tag{font-size:9px;font-weight:800;letter-spacing:.12em;color:var(--accent2);}
+  .hdr h1{font-size:21px;line-height:1.3;margin:3px 0 4px;font-weight:800;}
+  .hdr .sub{font-size:9.5px;color:#bcd2e8;}
+  .hdr .logo{position:absolute;right:18px;top:14px;font-size:17px;font-weight:900;letter-spacing:.06em;}
+  .body{flex:1;padding:11px 16px 8px;display:flex;flex-direction:column;gap:8px;}
+  /* section title */
+  .st{display:flex;align-items:center;gap:7px;margin-bottom:5px;}
+  .st .b{width:4px;height:14px;background:var(--accent);border-radius:2px;}
+  .st h2{font-size:12.5px;color:var(--navy);font-weight:800;}
+  /* whatis */
+  .what{display:flex;gap:10px;align-items:stretch;}
+  .what .lead{flex:1;background:var(--light);border-radius:8px;padding:9px 11px;font-size:10px;line-height:1.6;color:#33414f;}
+  .what .lead b{color:var(--navy);}
+  .cmp{display:flex;gap:6px;align-items:center;flex:0 0 232px;}
+  .cmp .box{flex:1;border-radius:8px;padding:8px;text-align:center;color:#fff;}
+  .cmp .box .t{font-size:10px;font-weight:800;}
+  .cmp .box .d{font-size:8.5px;margin-top:2px;opacity:.92;line-height:1.4;}
+  .cmp .n{background:var(--navy2);} .cmp .f{background:var(--accent);}
+  .cmp .ar{color:var(--accent);font-size:15px;font-weight:900;}
+  /* 3 steps */
+  .steps{display:flex;gap:9px;}
+  .step{flex:1;background:#fff;border:1px solid var(--line);border-radius:9px;padding:9px 10px;position:relative;}
+  .step .no{width:22px;height:22px;border-radius:50%;background:var(--accent);color:#fff;font-size:12px;font-weight:800;
+    display:flex;align-items:center;justify-content:center;margin-bottom:5px;}
+  .step h3{font-size:10.5px;color:var(--navy);font-weight:800;margin-bottom:3px;}
+  .step p{font-size:8.8px;color:var(--sub);line-height:1.5;}
+  /* journey */
+  .jrow{display:flex;align-items:center;gap:3px;}
+  .jchip{flex:1;text-align:center;padding:6px 2px;border-radius:6px;font-size:8.8px;font-weight:800;color:#fff;line-height:1.2;}
+  .jar{color:var(--accent);font-size:11px;font-weight:900;}
+  .jnote{font-size:9px;color:#b4571d;background:#fff6ee;border:1px solid #f6d3b3;border-radius:7px;padding:7px 10px;margin-top:6px;line-height:1.55;}
+  .jnote b{color:#8f4214;}
+  /* two-col bottom */
+  .cols{display:flex;gap:11px;}
+  .col{flex:1;}
+  /* value list */
+  .vlist{list-style:none;}
+  .vlist li{font-size:9.3px;padding:3px 0 3px 16px;position:relative;line-height:1.45;color:#33414f;}
+  .vlist li::before{content:"✓";position:absolute;left:0;color:var(--blue);font-weight:900;}
+  /* stats */
+  .stats{display:flex;gap:6px;}
+  .scard{flex:1;background:var(--light);border-radius:7px;padding:6px 2px;text-align:center;border-top:3px solid var(--accent);}
+  .scard .big{font-size:15px;font-weight:900;color:var(--navy);line-height:1;}
+  .scard .u{font-size:9px;}
+  .scard .c{font-size:7.8px;color:var(--sub);margin-top:2px;}
+  /* finance */
+  .fin{display:flex;gap:8px;}
+  .fc{flex:1;background:var(--light);border-radius:7px;padding:7px 9px;}
+  .fc .ti{font-size:9px;color:var(--navy);font-weight:800;}
+  .fc .am{font-size:13px;color:var(--accent);font-weight:900;margin:1px 0;}
+  .fc .badge{font-size:7.5px;color:var(--green);font-weight:800;}
+  .fc .d{font-size:8px;color:var(--sub);line-height:1.4;}
+  /* cta footer */
+  .cta{background:linear-gradient(120deg,var(--navy),var(--navy2));color:#fff;padding:11px 18px;display:flex;align-items:center;justify-content:space-between;}
+  .cta .l .k{font-size:9px;color:var(--accent2);font-weight:800;}
+  .cta .l h3{font-size:14px;font-weight:800;margin-top:1px;}
+  .cta .l p{font-size:8.8px;color:#bcd2e8;margin-top:2px;}
+  .cta .r{text-align:right;}
+  .cta .pill{display:inline-block;background:var(--accent);color:#fff;font-size:11px;font-weight:800;padding:6px 14px;border-radius:20px;}
+  .cta .mail{font-size:11px;font-weight:800;margin-top:5px;}
+  .mini{font-size:8.5px;color:var(--sub);line-height:1.55;}
+  .mini b{color:var(--navy);}
+</style>
+</head>
+<body>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="hdr">
+    <div class="circ"></div>
+    <div class="tag">ふるさと住民登録制度　企画運営サポートのご提案【概要版】</div>
+    <h1>地域の応援者を増やし、継続的な「関わり」をつくる。</h1>
+    <div class="sub">～ クラウドファンディングで培った「地域と人をつなぐ力」を、ふるさと住民登録制度の運用へ ～</div>
+    <div class="logo">KITAICHI</div>
+  </div>
+
+  <div class="body">
+
+    <!-- 制度とは -->
+    <div>
+      <div class="st"><span class="b"></span><h2>ふるさと住民登録制度とは</h2></div>
+      <div class="what">
+        <div class="lead">関係人口の<b>「数の拡大」と「質の向上」</b>を図り、<b>地域の担い手不足の解決</b>を目指す制度。地域を応援したい人・関わりたい人とつながり、継続的な関係を育てます。</div>
+        <div class="cmp">
+          <div class="box n"><div class="t">ふるさと納税</div><div class="d">「寄附」で<br>接点を広げた</div></div>
+          <div class="ar">→</div>
+          <div class="box f"><div class="t">住民登録制度</div><div class="d">来訪を伴う「関わり」で<br>担い手につなげる</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- なぜKITAICHI + 3steps -->
+    <div>
+      <div class="st"><span class="b"></span><h2>KITAICHIが、企画から担い手活動まで「伴走」します</h2></div>
+      <p class="mini" style="margin-bottom:6px;">本制度はクラウドファンディングと<b>非常に近い構造</b>です（想いを伝え・共感者を増やし・参加を募り・関係を続ける）。CFのノウハウが、そのまま担い手活動の募集に活きます。</p>
+      <div class="steps">
+        <div class="step"><div class="no">①</div><h3>制度活用の企画設計</h3><p>地域課題や強みを整理し、何を目指すかを一緒に検討。コンセプト・登録特典まで設計します。</p></div>
+        <div class="step"><div class="no">②</div><h3>登録者募集の伴走</h3><p>募集ページ・チラシ・SNS発信を制作。「未来に関わってください」と届くメッセージに。</p></div>
+        <div class="step"><div class="no">③</div><h3>担い手活動の運営支援</h3><p>地域に合わせた取り組み・担い手活動を企画し、当日運営まで伴走します。</p></div>
+      </div>
+    </div>
+
+    <!-- 設計の肝：登録で終わらせない -->
+    <div>
+      <div class="st"><span class="b"></span><h2>「登録」で終わらせない設計</h2></div>
+      <div class="jrow">
+        <div class="jchip" style="background:#cdd9e3;color:#39505f;">募集</div><span class="jar">→</span>
+        <div class="jchip" style="background:var(--sky);">ベーシック登録</div><span class="jar">→</span>
+        <div class="jchip" style="background:var(--accent);">関わりたくなる取組</div><span class="jar">→</span>
+        <div class="jchip" style="background:var(--blue);">担い手活動<br>参加・交流</div><span class="jar">→</span>
+        <div class="jchip" style="background:var(--navy2);">プレミアム登録</div><span class="jar">→</span>
+        <div class="jchip" style="background:var(--navy);">担い手・応援者へ</div>
+      </div>
+      <div class="jnote">クリック一つの<b>ベーシック登録</b>と、担い手活動3回が必須の<b>プレミアム登録</b>の間には大きなハードルがあります。その手前に<b>「地域に関わりたくなる取り組み」</b>を置くことで、関わり続ける流れを生み、「地域の未来につながる仕組み」へ育てます。</div>
+    </div>
+
+    <!-- 下段2カラム -->
+    <div class="cols">
+      <div class="col">
+        <div class="st"><span class="b"></span><h2>取り組みの例（地域と一緒に設計）</h2></div>
+        <ul class="vlist">
+          <li>芳名板ベンチの設置で来訪者の愛着を醸成</li>
+          <li>植樹会のオーナー権／秘密のスポット案内ツアー</li>
+          <li>新商品モニター会・商品開発／空き家活用アイデア募集</li>
+          <li>農業・漁業・酒蔵の限定体験、まちづくり会議への参加</li>
+          <li>特典例：首長との面会・一日PR大使・特別な住民票</li>
+        </ul>
+      </div>
+      <div class="col">
+        <div class="st"><span class="b"></span><h2>私たちの実績 ／ 期待できる効果</h2></div>
+        <div class="stats" style="margin-bottom:5px;">
+          <div class="scard"><div class="big">35<span class="u">件</span></div><div class="c">サポート実績</div></div>
+          <div class="scard"><div class="big">6,488<span class="u">万</span></div><div class="c">累計支援総額</div></div>
+          <div class="scard"><div class="big">4,060<span class="u">人</span></div><div class="c">累計支援者数</div></div>
+          <div class="scard"><div class="big">850<span class="u">件</span></div><div class="c">GCF立上げ支援</div></div>
+        </div>
+        <ul class="vlist">
+          <li>地域への来訪が増え、応援者を可視化できる</li>
+          <li>担い手不足の解消・将来的な移住／関係人口拡大へ</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 財源 -->
+    <div>
+      <div class="st"><span class="b"></span><h2>活用できる財源（いずれも総務省に確認済み）</h2></div>
+      <div class="fin">
+        <div class="fc"><div class="ti">制度の準備・運用</div><div class="am">上限 1,000万円</div><div class="d">事業費を上限に、50％×財政力補正により特別交付税措置。本業務への活用も可能。<span class="badge">✓ 確認済み</span></div></div>
+        <div class="fc"><div class="ti">ふるさと住民コーディネーターの設置</div><div class="am">500万円</div><div class="d">特別交付税措置。事業者が業務委託として受託しても問題ありません。<span class="badge">✓ 確認済み</span></div></div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CTA -->
+  <div class="cta">
+    <div class="l">
+      <div class="k">ご相談・お問い合わせ</div>
+      <h3>まずは雑談レベルでも大丈夫です。</h3>
+      <p>「うちの町だと何ができる？」を、一緒に考えるところから。御地に合った活用案を無料でご提案します。</p>
+    </div>
+    <div class="r">
+      <div class="pill">まず30分のオンライン相談から</div>
+      <div class="mail">担当：佐近　✉ info@kita1.jp</div>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
