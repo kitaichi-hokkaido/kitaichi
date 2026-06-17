@@ -18,10 +18,10 @@ def cell(path, pos, cls):
 
 top_css = '''
   .topphotos { display:flex; gap:7pt; margin:0 0 6pt; align-items:flex-start; }
-  .topphotos .tp-cell.left  { width:46%; }
-  .topphotos .tp-cell.right { width:54%; }
+  .topphotos .tp-cell.left  { width:42%; }
+  .topphotos .tp-cell.right { width:58%; }
   .topphotos img, .topphotos .ph {
-    width:100%; height:31mm; object-fit:cover; display:block;
+    width:100%; height:34mm; object-fit:cover; display:block;
     border-radius:3pt; }
   .topphotos .tp-cell.contain img { object-fit:contain; object-position:center; }
   .topphotos .ph { background:#e3ecec; color:#8a9a9a; font-size:8.5pt;
@@ -29,7 +29,7 @@ top_css = '''
 '''
 
 band = ('  <div class="topphotos">\n    '
-        + cell(p1, 'center 28%', 'left') + '\n    '
+        + cell(p1, 'center', 'left contain') + '\n    '
         + cell(p2, 'center', 'right') + '\n  </div>\n\n')
 
 html = base.replace('</style>', top_css + '</style>')
