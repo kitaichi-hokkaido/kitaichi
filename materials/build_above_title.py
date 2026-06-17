@@ -21,7 +21,7 @@ top_css = '''
   .topphotos .tp-cell.left  { width:46%; }
   .topphotos .tp-cell.right { width:54%; }
   .topphotos img, .topphotos .ph {
-    width:100%; height:36mm; object-fit:cover; display:block;
+    width:100%; height:31mm; object-fit:cover; display:block;
     border-radius:3pt; }
   .topphotos .tp-cell.contain img { object-fit:contain; object-position:center; }
   .topphotos .ph { background:#e3ecec; color:#8a9a9a; font-size:8.5pt;

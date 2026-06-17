@@ -5,7 +5,7 @@
 <style>
   @page {
     size: A4;
-    margin: 10mm 11mm 9mm 11mm;
+    margin: 8mm 11mm 7mm 11mm;
   }
   * { margin: 0; padding: 0; box-sizing: border-box; }
   html { -weasy-hyphens: none; }
@@ -59,7 +59,7 @@
     line-height: 1.2;
   }
   /* ===== Two-column area ===== */
-  .cols { display: flex; gap: 9pt; margin-bottom: 7pt; }
+  .cols { display: flex; gap: 9pt; margin-bottom: 4pt; }
   .col-left { width: 46%; }
   .col-right { width: 54%; }
 
@@ -100,26 +100,37 @@
   .message .sign { display: block; text-align: right; margin-top: 4pt; font-size: 8pt; color: #5a6b6b; }
 
   /* ===== Program section ===== */
+  .service-lead {
+    background: #0a6e6e; color: #fff;
+    border-radius: 3pt;
+    padding: 3.5pt 9pt;
+    font-size: 10pt; font-weight: bold;
+    line-height: 1.35;
+    margin-bottom: 4pt;
+  }
+  .service-lead strong { color: #ffe08a; font-size: 11.5pt; }
   .program-intro {
     font-size: 8.7pt;
-    line-height: 1.5;
-    margin-bottom: 6pt;
+    line-height: 1.45;
+    margin-bottom: 4pt;
   }
+  .program-intro b { color: #0a6e6e; }
   .offer { display: flex; gap: 9pt; margin-bottom: 7pt; }
   .offer .card {
     width: 50%;
-    border: 0.6pt solid #cbd6d6;
-    border-top: 2.4pt solid #0a6e6e;
+    background: #f1f8f8;
+    border: 0.6pt solid #b9d4d4;
+    border-top: 2.6pt solid #0a6e6e;
     border-radius: 2pt;
-    padding: 5pt 7pt;
+    padding: 5pt 8pt;
   }
   .offer .card .num {
     display: inline-block;
     background: #0a6e6e; color: #fff;
-    font-size: 7.5pt; font-weight: bold;
-    border-radius: 2pt; padding: 0.5pt 4pt; margin-bottom: 2.5pt;
+    font-size: 8pt; font-weight: bold;
+    border-radius: 2pt; padding: 1pt 5pt; margin-bottom: 2.5pt;
   }
-  .offer .card h3 { font-size: 9pt; color: #0a3d3d; margin-bottom: 2.5pt; line-height: 1.3; }
+  .offer .card h3 { font-size: 9.5pt; color: #0a3d3d; margin-bottom: 2.5pt; line-height: 1.3; }
   .offer .card p { font-size: 8pt; line-height: 1.45; color: #3a4a4a; }
 
   /* strengths + flow */
@@ -200,7 +211,7 @@
   .topphotos .tp-cell.left  { width:46%; }
   .topphotos .tp-cell.right { width:54%; }
   .topphotos img, .topphotos .ph {
-    width:100%; height:36mm; object-fit:cover; display:block;
+    width:100%; height:31mm; object-fit:cover; display:block;
     border-radius:3pt; }
   .topphotos .tp-cell.contain img { object-fit:contain; object-position:center; }
   .topphotos .ph { background:#e3ecec; color:#8a9a9a; font-size:8.5pt;
@@ -221,32 +232,11 @@
 
   <div class="doctitle">会社概要 ＆ クラウドファンディング活用サポートのご案内</div>
 
-  <!-- 上段：会社概要 ＋ 代表メッセージ -->
-  <div class="cols">
-    <div class="col-left">
-      <h2>会社概要</h2>
-      <table class="company">
-        <tr><th>会社名</th><td>株式会社KITAICHI（キタイチ）</td></tr>
-        <tr><th>代表者</th><td>代表　佐近　航（さこん わたる）</td></tr>
-        <tr><th>事業内容</th><td>まちづくり・地域創生に関する事業のサポート／クラウドファンディングの企画・運営伴走</td></tr>
-        <tr><th>主な強み</th><td>CAMPFIRE パートナー企業。元自治体職員・元ふるさと納税サイト運営者・ファンドレイザーが在籍</td></tr>
-        <tr><th>お問い合わせ</th><td>担当：佐近　航<br>メール：info@kita1.jp</td></tr>
-      </table>
-    </div>
-    <div class="col-right">
-      <h2>代表メッセージ</h2>
-      <div class="message">
-        <span class="lead">高校生には、地域を変えるほどの力がある。</span>
-        私は財政破綻を経験した夕張市役所で、地域再生や高校魅力化事業を担当していました。誰もが新しい一歩を踏み出せずにいたなか、夕張高校の生徒会長が「夕張に言い訳するのではなく、夕張だからできることに目を向けたい」とまちづくり会議で大人たちに向けて話し、その言葉が財政再生計画の見直しにつながりました。高校生は地域を変える力があります。だからこそ、高校生のチャレンジに資金と応援を届けるサポートをさせてください。
-        <span class="sign">株式会社KITAICHI 代表　佐近　航</span>
-      </div>
-    </div>
-  </div>
-
-  <!-- プログラム概要 -->
-  <h2>サービス概要 ── 高校生のチャレンジを「クラウドファンディング」で実現します</h2>
+  <!-- サービス概要（先頭に配置） -->
+  <h2>サービス概要</h2>
+  <div class="service-lead">高校生のチャレンジを、<strong>クラウドファンディング</strong>で実現します。</div>
   <p class="program-intro">
-    高校生が主体的に地域のために挑戦し、町内外から応援を集めて実現する経験は、生徒の成長にも地域の未来にも大きな意義があります。
+    高校生が主体的に地域のために挑戦し、町内外から応援を集めて実現する経験は、<b>生徒の成長にも、地域の未来にも大きな意義があります。</b>
     「やりたいけれど予算がない」というハードルを、企画から支援獲得までの伴走で乗り越えます。提供内容は次の2つです。
   </p>
 
@@ -306,6 +296,28 @@
       <li><b>三重県立相可高校</b>の総合的な探究学習を1年間伴走。生徒が地域貢献の取り組みを具体化し、クラファンで実現するまで支援。</li>
       <li><b>北海道立上ノ国高校</b>の生徒会が、町民も楽しめる学校祭を目指し花火大会を企画。募金とクラファンで幅広く応援を獲得。</li>
     </ul>
+  </div>
+
+  <!-- 会社概要 ＋ 私たちの想い（後半に集約） -->
+  <div class="cols" style="margin-top:4pt;">
+    <div class="col-left">
+      <h2>会社概要</h2>
+      <table class="company">
+        <tr><th>会社名</th><td>株式会社KITAICHI（キタイチ）</td></tr>
+        <tr><th>代表者</th><td>代表　佐近　航（さこん わたる）</td></tr>
+        <tr><th>事業内容</th><td>まちづくり・地域創生に関する事業のサポート／クラウドファンディングの企画・運営伴走</td></tr>
+        <tr><th>主な強み</th><td>CAMPFIRE パートナー企業。元自治体職員・元ふるさと納税サイト運営者・ファンドレイザーが在籍</td></tr>
+        <tr><th>お問い合わせ</th><td>担当：佐近　航<br>メール：info@kita1.jp</td></tr>
+      </table>
+    </div>
+    <div class="col-right">
+      <h2>私たちの想い ─ 高校生のチャレンジを応援したい</h2>
+      <div class="message">
+        <span class="lead">高校生には、地域を変えるほどの力がある。</span>
+        私は財政破綻を経験した夕張市役所で、地域再生や高校魅力化事業を担当していました。夕張高校の生徒会長が「夕張に言い訳するのではなく、夕張だからできることに目を向けたい」とまちづくり会議で大人たちに向けて話し、その言葉が財政再生計画の見直しにつながりました。高校生は地域を変える力があります。だからこそ、高校生のチャレンジに資金と応援を届けるサポートをさせてください。
+        <span class="sign">株式会社KITAICHI 代表　佐近　航</span>
+      </div>
+    </div>
   </div>
 
   <div class="contact">
