@@ -29,7 +29,7 @@ top_css = '''
 '''
 
 band = ('  <div class="topphotos">\n    '
-        + cell(p1, 'center', 'left contain') + '\n    '
+        + cell(p1, 'center 28%', 'left') + '\n    '
         + cell(p2, 'center', 'right') + '\n  </div>\n\n')
 
 html = base.replace('</style>', top_css + '</style>')
