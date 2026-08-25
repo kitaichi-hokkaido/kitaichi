@@ -33,12 +33,15 @@ def to_num(v):
 
 
 def build_campaigns(rows):
+    # Group by URL, not row_no: the spreadsheet's "No." column (row_no) is
+    # reassigned whenever rows are inserted above a campaign, but each
+    # campaign's project URL is stable over its lifetime.
     by_row = defaultdict(list)
     for r in rows:
-        by_row[r["row_no"]].append(r)
+        by_row[r["url"] or r["project_name"]].append(r)
 
     campaigns = []
-    for row_no, entries in by_row.items():
+    for key, entries in by_row.items():
         entries.sort(key=lambda r: r["date"])
         latest = entries[-1]
         history = [
@@ -52,7 +55,7 @@ def build_campaigns(rows):
         prev = entries[-2] if len(entries) > 1 else None
         campaigns.append(
             {
-                "row_no": row_no,
+                "row_no": latest["row_no"],
                 "name": latest["project_name"],
                 "site": latest["site"],
                 "url": latest["url"],

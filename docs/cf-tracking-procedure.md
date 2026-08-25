@@ -48,13 +48,16 @@ Google Drive連携（`mcp__Google_Drive__download_file_content`）で、この�
 
 ## 3. データを蓄積する
 
-`data/cf_tracking.csv` に1日1行を追記する（同じ日付・同じrow_noの重複行は追記しない。既にある場合は当日分を最新値で上書き）。
+`data/cf_tracking.csv` に1日1行を追記する（同じ日付・同じURLの重複行は追記しない。既にある場合は当日分を最新値で上書き）。
 
 列: `date,row_no,project_name,site,url,period_start,period_end,target_amount,support_amount,supporter_count,note`
 
-- `row_no` はスプレッドシートのA列の番号（案件の一意キーとして使う）。
+- **案件の一意キーは`url`（プロジェクトの実URL）。`row_no`（スプレッドシートA列の番号）は表示用の参考情報に過ぎず、
+  新しい案件が上に挿入されると全案件の番号がズレる。実際に2026-08-26、佐世保市の案件がまとまって
+  1行から18行に分解された際、既存案件の`row_no`が全てズレたことを確認済み。案件の同一性は必ず`url`で判定すること。**
 - 金額は円の整数（カンマなし）。
 - 取得できなかった項目は空欄にし、`note` に理由を書く。
+- `scripts/build_dashboard.py` も `url`（無ければ`project_name`）でグルーピングして推移を計算する実装になっている。
 
 ## 4. ダッシュボードを更新する
 
