@@ -83,6 +83,11 @@ Artifactとして同じURLに再publishする（新規publishではなく、既�
 
 ## 現在のArtifact URL
 
-https://claude.ai/code/artifact/f623651d-16b3-49ae-bf6b-caf8b7e5cbb7
+https://claude.ai/code/artifact/9653ca5c-5dda-43f2-a797-f53b9c7cc2e9
 
 （`Artifact` ツールで `url` パラメータにこのURLを指定して再publishすること。`url` を省略すると別のArtifactが新規作成されてしまうので注意。）
+
+※旧URL（f623651d-16b3-49ae-bf6b-caf8b7e5cbb7）は、共有リンク側が古いバージョンのまま
+固定表示される不具合が発生したため2026-08-26に廃止し、上記の新URLに切り替えた。
+今後また同様の症状（再publishしても閲覧者側の表示が更新されない）が出た場合は、
+別のファイルパスから新規publishしてURLを切り替えること。
