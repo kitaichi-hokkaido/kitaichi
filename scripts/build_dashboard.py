@@ -40,10 +40,18 @@ def build_campaigns(rows):
     for r in rows:
         by_row[r["url"] or r["project_name"]].append(r)
 
+    latest_date = max((r["date"] for r in rows), default=None)
+
     campaigns = []
     for key, entries in by_row.items():
         entries.sort(key=lambda r: r["date"])
         latest = entries[-1]
+        if latest["date"] != latest_date:
+            # Not present in the most recent day's spreadsheet pull -
+            # the campaign was removed from the spreadsheet (or its
+            # public period ended). Keep its rows in the CSV for history,
+            # but stop showing it on the dashboard.
+            continue
         history = [
             {
                 "date": e["date"],

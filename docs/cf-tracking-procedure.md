@@ -65,6 +65,10 @@ Google Drive連携（`mcp__Google_Drive__download_file_content`）で、この�
 Artifactとして同じURLに再publishする（新規publishではなく、既存Artifact URLを`url`パラメータで指定して更新すること）。
 
 - 現在のArtifact URL: `docs/cf-tracking-procedure.md` 末尾の「現在のArtifact URL」欄を参照。
+- `scripts/build_dashboard.py` は、CSV内の**最新日付の行に含まれていない案件はダッシュボードに表示しない**
+  （スプレッドシートから削除された案件・公開期間が終了した案件を自動的に除外するため）。
+  過去データはCSVに残るので、案件が復活すれば自動的にまた表示される。
+  2026-08-28、ユーザーの依頼によりこの仕様にした。
 
 ## 5. メールで日次サマリーを送信する
 
