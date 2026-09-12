@@ -7,8 +7,11 @@
 ```
 contacts/
   README.md
-  meishi.csv     # 名刺台帳（Excel / Google スプレッドシート等で開けるCSV）
+  meishi.csv     # 名刺台帳（Excel / Google スプレッドシート等で開けるCSV。正データはこちら）
+  meishi.xlsx    # 上記CSVを見やすく整形したExcelスプレッドシート
 ```
+
+`meishi.xlsx` は `meishi.csv` から生成した閲覧・共有用のファイルです。新しい名刺を追加したときは、`meishi.csv` を更新したうえで `meishi.xlsx` も作り直してください。
 
 ## 使い方
 
