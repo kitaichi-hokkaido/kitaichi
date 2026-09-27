@@ -10,6 +10,8 @@
 |---|---|
 | `flyer.html` | たたき台の元データ（ブラウザで開いて確認・編集） |
 | `flyer.pdf` | 確認用PDF（1ページ目＝表面、2ページ目＝裏面） |
+| `flyer.pptx` | 編集用パワーポイント（A4縦・2スライド）。Googleドライブにアップロードし「Googleスライドで開く」で編集可 |
+| `build_pptx.js` | `flyer.pptx` の生成スクリプト（`npm install pptxgenjs` → `node build_pptx.js`） |
 
 赤字の【要差替】【要確認】は仮の文言・数字です。
 
